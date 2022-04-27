@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-seri;
+}
+
+body {
+  background-color: rgb(68, 100, 124);
+  overflow: hidden;
+}
+
+.home,
+.about,
+.links,
+.beer {
+  height: 90vh;
+  position: absolute;
+  width: 80%;
+  /* right: 0; */
+  /* margin: 0, 10%, 0, 10%; */
+  /* margin-top: 1%; */
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  transform: translate(55%, -50%);
+  top: 50%;
+  right: 50%;
+
+  box-shadow: 0 0 15px 15px rgb(0 0 0 / 25%);
+}
+
+.home-content,
+.about-content,
+.links-content,
+.beer-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.home-content img,
+.about-content img,
+.links-content img,
+.veer-content img {
+  max-height: 80%;
+  max-width: 80%;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 10%);
+}
+
+.home-content h1 {
+  font-size: 55px;
+  margin: 30px 0px;
+  font-weight: 600;
+}
+
+.home-content p {
+  font-size: 25px;
+}
+
+.home {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+
+.about {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.links {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.beer {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+/* .container       //automatyczne zmniejszanie kontenera
+{
+    border: 5px solid limegreen;
+    width: min(100% - 2rem, 600px); //jak sie chce druga wartosci przy zmniejszaniu
+    width: min(100% - 2rem);
+    margin-inline: auto;
+} 
+*/
+
+footer {
+  text-align: center;
+  justify-content: center;
+  transform: translate(55%, 0%);
+  right: 50%;
+  font-size: 0.8rem;
+  padding: 3px;
+  position: fixed;
+  bottom: 0px;
+}

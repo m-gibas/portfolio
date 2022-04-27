@@ -1,0 +1,107 @@
+:root {
+  --clr: rgb(68, 100, 124);
+}
+
+/* body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: var(--clr);
+} */
+
+.navigation {
+  width: 80px;
+  height: 300px;
+  background: white;
+  position: fixed;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  border-radius: 15px;
+  /* margin-top: 30vh; */
+  margin-left: 10px;
+  z-index: 0;
+
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+.navigation ul {
+  display: block;
+  height: 300px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  padding-top: 15%;
+  padding-left: 15%;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* width: 100%; */
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 65px;
+  font-size: 1.75em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+  transform: translateX(65px);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -50%;
+  background: white;
+  border-radius: 50%;
+  border: 5px solid var(--clr);
+  transition: 0.5s;
+}
+
+.navigation ul li a .name {
+  position: absolute;
+  color: var(--clr);
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.navigation ul li.active a .name {
+  opacity: 1;
+  transform: translateY(35px);
+}
+
+/* .indicator
+{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -50%;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid var(--clr);
+    transition: 0.5s;
+} */
+
+
+/*# sourceMappingURL=/verticalBar.c23e8ae9.css.map */

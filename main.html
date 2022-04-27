@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- <link rel = "stylesheet" href="./css/horizontalBar.css" /> -->
+    <link rel="stylesheet" href="./css/verticalBar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <ul class>
+        <li class="list active">
+          <a href="./main.html">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="name">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./about.html">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="name">About me</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./links.html">
+            <span class="icon">
+              <ion-icon name="link-outline"></ion-icon>
+            </span>
+            <span class="name">Links</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./beer.html">
+            <span class="icon">
+              <ion-icon name="beer-outline"></ion-icon>
+            </span>
+            <span class="name">Beer!</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+
+    <main data-router-wrapper>
+      <div data-router-view="home" class="home">
+        <div class="home-content">
+          <div class="home-presentation">
+            <h1>Hello!</h1>
+            <p>Welcome to my Portfolio website.</p>
+            <br />
+            <p>something</p>
+          </div>
+          <img src="./images/home.png" alt="home" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- <p>Maksymilian Gibas, 2022 &copy;. All rights reserved.</p> -->
+    </footer>
+
+    <script>
+      // const header = document.getElementsByClassName("navigation")
+      const list = document.getElementsByClassName("list");
+
+      for (let i = 0; i < list.length; i++) {
+        list[i].addEventListener("click", function () {
+          let current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
